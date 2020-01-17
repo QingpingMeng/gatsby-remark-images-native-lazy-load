@@ -11,17 +11,17 @@ Yields:
 <img src="https://example.com/test.jps" alt="altText" loading="lazy">
 ```
 
-## What is the different between this plugin and `gatsby-remark-images`?
+## What is the difference between this plugin and `gatsby-remark-images`?
 
 `gatsby-remark-images` also has the support to add `loading` attribute, but it only works for local images, not images from external sources.
 
-## What is all albout `loading` attribute for img tag?
+## What is all about the `loading` attribute for `img` tag?
 
 ```html 
 <img src="image.png" loading="lazy" alt="…">
 ```
 
-This image will be **NOT** loaded over network until the viewport is approaching the it.
+This image will be **NOT** loaded over the network until the viewport is approaching it.
 
 This will significantly speed up your site loading if there are tons of images. 
 
@@ -30,15 +30,15 @@ Here are the supported values for the `loading` attribute:
 * `lazy`: Defer loading of the resource until it reaches a calculated distance from the viewport.
 * `eager`: Load the resource immediately, regardless of where it's located on the page.
 
-## What browrser are supporting this `loading` attribute?
+## What browsers are supporting this `loading` attribute?
 
-It is already suppported in Chrome 76 and later versions. It should be supported in any Chromium 76-based browser. 
+It is already supported in Chrome 76 and later versions. It should be supported in any Chromium 76-based browser. 
 
-If browser doesn't support this attribute, it will be ignored and images will load as usual.
+If the browser doesn't support this attribute, it will be ignored and images will load as usual.
 
 Check it out here: https://caniuse.com/#search=loading%20lazy
 
-### How to use this pluging?
+### How to use this plugin?
 
 In your gatsby.config.js:
 
